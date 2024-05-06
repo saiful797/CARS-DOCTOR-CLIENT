@@ -22,6 +22,9 @@ const SignUp = () => {
             console.log(user);
             
         })
+        .then(error => {
+            console.log(error.message);
+        })
     }
     return (
         <div className="hero min-h-screen bg-base-200">
