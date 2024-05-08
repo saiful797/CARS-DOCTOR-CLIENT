@@ -20,11 +20,12 @@ const CheckOut = () => {
             CustomerName: name, 
             date, 
             img,
+            title,
             email, 
             serviceId: _id,
             price: price
         };
-        console.log(bookingInfo);
+        // console.log(bookingInfo);
 
         fetch('http://localhost:5000/bookings',{
             method: 'POST',
